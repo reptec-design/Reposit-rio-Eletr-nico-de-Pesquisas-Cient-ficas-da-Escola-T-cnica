@@ -60,3 +60,108 @@ li {
 .botao:hover {
   background-color: #162d66;
 }
+
+/* ===== HERO ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.hero-texto h1 {
+  font-size: 64px;
+  color: #8b88b8;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 18px;
+  color: #666;
+}
+
+.hero-logo img {
+  max-width: 280px;
+}
+
+/* ===== SEÇÃO DESTAQUE ===== */
+.destaque {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.destaque-texto {
+  flex: 1;
+}
+
+.destaque-imagem img {
+  max-width: 350px;
+  border-radius: 6px;
+}
+
+/* ===== SEÇÃO DE ARTIGOS ===== */
+.secao-artigos {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.artigos-texto {
+  flex: 1;
+}
+
+.artigos-texto h1 {
+  font-size: 42px;
+  color: #1f3c88;
+  margin-bottom: 20px;
+}
+
+.busca-simples {
+  margin: 20px 0;
+}
+
+.busca-simples input {
+  padding: 10px;
+  width: 200px;
+}
+
+.busca-simples button {
+  padding: 10px 16px;
+  background-color: #1f3c88;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.artigos-imagem img {
+  max-width: 260px;
+}
+
+/* ===== SOBRE O REPOSITÓRIO ===== */
+.sobre {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.sobre-imagem img {
+  max-width: 350px;
+  border-radius: 6px;
+}
+
+.sobre-texto {
+  flex: 1;
+}
+
+.sobre-texto h1 {
+  font-size: 42px;
+  color: #1f3c88;
+  margin-bottom: 20px;
+}
+
+.sobre-texto p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
