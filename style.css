@@ -96,9 +96,19 @@ li {
   flex: 1;
 }
 
+.destaque-imagem {
+  flex: 0 0 350px;   /* largura fixa da coluna da imagem */
+  text-align: left; /* garante alinhamento à esquerda */
+}
+
 .destaque-imagem img {
-  max-width: 350px;
-  border-radius: 6px;
+  display: block;
+  max-width: 100%;
+  margin: 0;   /* remove centralização automática */
+}
+
+.destaque-texto {
+  flex: 1;   /* ocupa o restante do espaço */
 }
 
 /* ===== SEÇÃO DE ARTIGOS ===== */
