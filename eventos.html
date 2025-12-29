@@ -2,44 +2,54 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Trabalhos em Eventos – REPTEC</title>
+  <title>Eventos – Artigos Científicos</title>
   <link rel="stylesheet" href="style.css">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <main>
   <div class="conteudo-central">
+    <h1>Trabalhos Publicados em Eventos</h1>
 
-  <h1>Trabalhos Publicados em Eventos Científicos</h1>
+    <input
+      type="text"
+      id="searchEventos"
+      placeholder="Buscar artigo por título ou autor..."
+      onkeyup="filtrarEventos()"
+    >
 
-  <div class="artigo-card">
-    <h3>
-      Artificial Inteligence in Text Evaluation: Comparing the Performance of ChatGPT
-      and Human Evaluators in Essay Grading
-    </h3>
+    <div class="lista-artigos">
+      <div class="card-artigo artigo-evento">
+        <h3>Artificial Intelligence in Text Evaluation: Comparing the Performance of ChatGPT and Human Evaluators in Essay Grading</h3>
+        <p><strong>Autor(es):</strong> Deivison Gomes de Amorim; Maria Clara da Silva Pereira; Regina de Fátima da Silva Bezerra</p>
+        <p><strong>Ano:</strong> 2025</p>
+        <p><strong>Evento:</strong> TISE 2025 – UFPE</p>
+        <a href="https://www.tise.cl/2025/doc/Actas_TISE_2025.pdf#page=146" 
+           class="botao" target="_blank">
+           Acessar PDF (pág. 146)
+        </a>
+      </div>
+    </div>
 
-    <p><strong>Autor(es):</strong>
-      Deivison Gomes de Amorim; Maria Clara da Silva Pereira; Regina de Fátima da Silva Bezerra
+    <p>
+      <a href="artigos.html" class="botao">Voltar para Artigos Científicos</a>
     </p>
-
-    <p><strong>Evento:</strong> TISE 2025 – UFPE</p>
-    <p><strong>Ano:</strong> 2025</p>
-
-    <a href="https://www.tise.cl/2025/doc/Actas_TISE_2025.pdf"
-       class="botao" target="_blank">
-       Acessar Anais do Evento
-    </a>
-  </div>
-
-  <p>
-    <a href="index.html" class="botao">Voltar à Página Inicial</a>
-  </p>
-
   </div>
 </main>
+
+<script>
+function filtrarEventos() {
+  let input = document.getElementById("searchEventos");
+  let filtro = input.value.toLowerCase();
+  let artigos = document.getElementsByClassName("artigo-evento");
+
+  for (let i = 0; i < artigos.length; i++) {
+    let texto = artigos[i].innerText.toLowerCase();
+    artigos[i].style.display = texto.includes(filtro) ? "" : "none";
+  }
+}
+</script>
 
 <footer>
   <p>

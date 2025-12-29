@@ -326,3 +326,46 @@ footer {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
+/* ====== LISTA DE ARTIGOS EM CARDS ====== */
+
+.lista-artigos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.card-artigo {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-artigo h3 {
+  font-size: 1.1em;
+  color: #1a3d7c;
+  margin-bottom: 12px;
+}
+
+.card-artigo .autores {
+  font-size: 0.9em;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.card-artigo .meta {
+  font-size: 0.85em;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.card-artigo .botao {
+  align-self: flex-start;
+  margin-top: auto;
+}
