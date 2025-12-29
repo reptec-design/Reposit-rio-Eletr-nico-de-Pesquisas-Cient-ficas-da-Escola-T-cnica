@@ -208,3 +208,23 @@ li {
   border-radius: 6px;
   background-color: #fafafa;
 }
+
+.botao-eventos {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn-eventos {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #0b5ed7;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-eventos:hover {
+  background-color: #084298;
+}
