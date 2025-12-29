@@ -2,82 +2,48 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Administração | REPTEC</title>
+  <title>Administração – Artigos Científicos</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <main>
 
-  <h1>Artigos Científicos – Administração</h1>
+  <h1>Administração</h1>
 
-  <p>
-    Nesta seção estão reunidos os artigos científicos produzidos pelos alunos do
-    curso Técnico em Administração da Escola Técnica Estadual Antônio Arruda de Farias.
-  </p>
-
-  <!-- Barra de pesquisa -->
-  <input 
-    type="text" 
-    id="searchAdmin" 
-    placeholder="Buscar artigo por título, autor ou ano..."
+  <input
+    type="text"
+    id="searchAdmin"
+    placeholder="Buscar artigo por título ou autor..."
     onkeyup="filtrarAdmin()"
   >
 
-  <!-- ARTIGO 1 -->
-  <div class="artigo-admin">
+  <div class="artigo-card artigo-admin">
     <h3>MARKETING PUBLICITÁRIO: ESTRATÉGIAS DE QUALIDADE NOS SERVIÇOS</h3>
-
-    <p>
-      <strong>Autor(es):</strong>
-      ALESSANDRA DA SILVA LIMA; EDSON JONAS DA SILVA SANTOS; 
-      EVERTON GOMES BARBOSA DE ANDRADE; EWERTON HENRIQUE SANTOS DE ARRUDA; 
-      IRIS RANIELLY SILVA DA ROCHA; LÍVIA LORRANY DE LIMA; 
-      MARIA ALINE BARBOSA DA SILVA; PAULA AGUIAR SANTANA; 
-      WAGNER DE ANDRADE SILVA
-    </p>
-
-    <p><strong>Curso:</strong> Técnico em Administração</p>
+    <p><strong>Autor(es):</strong> Alessandra da Silva Lima et al.</p>
     <p><strong>Ano:</strong> 2025</p>
-
     <a href="https://archive.org/details/Marketing_Publicitario_Lima_2025"
        class="botao" target="_blank">
        Acessar PDF
     </a>
   </div>
 
-  <!-- ARTIGO 2 -->
-  <div class="artigo-admin">
+  <div class="artigo-card artigo-admin">
     <h3>A CHAVE DO SUCESSO DE UMA EMPRESA</h3>
-
-    <p>
-      <strong>Autor(es):</strong>
-      ANA CLARA SALES SILVA; FRANCIELLY DA COSTA FERREIRA; 
-      JOSÉ RYAN DA SILVA; LÍVIA VITÓRIA LIMA DO NASCIMENTO; 
-      LUANA CAROLYNE PEREIRA DOS SANTOS; MARIA ISTEFANE LIMA DE OLIVEIRA; 
-      PEDRO PESSOA DOS SANTOS; RUANNY NICOLE HENRIQUE DA SILVA; 
-      YASMIM ROBERTA DE LIMA MONTEIRO
-    </p>
-
-    <p><strong>Curso:</strong> Técnico em Administração</p>
+    <p><strong>Autor(es):</strong> Ana Clara Sales Silva et al.</p>
     <p><strong>Ano:</strong> 2025</p>
-
     <a href="https://archive.org/details/a_chave_do_sucesso_de_uma_empresa"
        class="botao" target="_blank">
        Acessar PDF
     </a>
   </div>
 
-  <!-- Voltar -->
   <p>
-    <a href="artigos.html" class="botao">
-      Voltar para Artigos Científicos
-    </a>
+    <a href="artigos.html" class="botao">Voltar para Artigos Científicos</a>
   </p>
 
 </main>
 
-<!-- SCRIPT DE BUSCA -->
 <script>
 function filtrarAdmin() {
   let input = document.getElementById("searchAdmin");
