@@ -136,3 +136,108 @@ footer {
   max-width: 900px;
   margin: 0 auto;
 }
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0b3c5d;
+}
+
+.bloco-sobre {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bloco-sobre img {
+  max-width: 320px;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 30px;
+  background: #0b3c5d;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ===== AJUSTES PARA CELULAR ===== */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  /* Imagens nunca ultrapassam a tela */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Blocos lado a lado viram empilhados */
+  .bloco-sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bloco-sobre img {
+    margin-bottom: 15px;
+  }
+
+  /* Cards ocupam largura total */
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Botões maiores para toque */
+  .botao {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    font-size: 1em;
+  }
+
+  /* Campo de busca */
+  input[type="text"] {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 0.9em;
+    text-align: center;
+    padding: 20px 10px;
+  }
+}
