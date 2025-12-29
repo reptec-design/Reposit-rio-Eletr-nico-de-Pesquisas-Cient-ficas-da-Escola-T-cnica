@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Publicações em Eventos Científicos | REPTEC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+  <h1>Publicações em Eventos Científicos</h1>
+
+  <p>
+    Esta seção reúne trabalhos acadêmicos produzidos pelos idealizadores e colaboradores
+    do REPTEC e publicados em eventos científicos, congressos, seminários e encontros acadêmicos.
+  </p>
+
+  <!-- Barra de pesquisa -->
+  <input 
+    type="text" 
+    id="searchEventos" 
+    placeholder="Buscar por título, autor, evento ou ano..."
+    onkeyup="filtrarEventos()"
+  >
+
+  <!-- TRABALHO 1 -->
+  <div class="artigo-evento">
+  <h3>
+    Artificial Intelligence in Text Evaluation: Comparing the Performance of ChatGPT and Human Evaluators in Essay Grading
+  </h3>
+
+  <p>
+    <strong>Autor(es):</strong>
+    Deivison Gomes de Amorim; Maria Clara da Silva Pereira; Regina de Fátima da Silva Bezerra
+  </p>
+
+  <p>
+    <strong>Evento:</strong>
+    TISE 2025 — Congresso Internacional realizado na Universidade Federal de Pernambuco (UFPE)
+  </p>
+
+  <p>
+    <strong>Ano:</strong> 2025
+  </p>
+
+  <p>
+    <strong>Publicação:</strong>
+    Artigo publicado nos anais do TISE 2025, integrando a revista oficial do evento.
+  </p>
+
+  <a 
+    href="https://www.tise.cl/2025/doc/Actas_TISE_2025.pdf#page=146"
+    class="botao"
+    target="_blank"
+  >
+    Acessar publicação oficial (TISE 2025)
+  </a>
+</div>
+
+  <!-- TRABALHO 2 -->
+  <div class="artigo-evento">
+    <h3>OUTRO TÍTULO DE PUBLICAÇÃO</h3>
+
+    <p><strong>Autor(es):</strong> NOMES</p>
+    <p><strong>Evento:</strong> Evento Científico</p>
+    <p><strong>Instituição:</strong> Escola Técnica Estadual Antônio Arruda de Farias</p>
+    <p><strong>Ano:</strong> 2025</p>
+
+    <a href="#" class="botao" target="_blank">
+      Acessar trabalho
+    </a>
+  </div>
+
+  <!-- Voltar -->
+  <p>
+    <a href="artigos.html" class="botao">
+      Voltar para Artigos Científicos
+    </a>
+  </p>
+
+</main>
+
+<!-- SCRIPT DE BUSCA -->
+<script>
+function filtrarEventos() {
+  let input = document.getElementById("searchEventos");
+  let filtro = input.value.toLowerCase();
+  let trabalhos = document.getElementsByClassName("artigo-evento");
+
+  for (let i = 0; i < trabalhos.length; i++) {
+    let texto = trabalhos[i].innerText.toLowerCase();
+    trabalhos[i].style.display = texto.includes(filtro) ? "" : "none";
+  }
+}
+</script>
+
+</body>
+</html>

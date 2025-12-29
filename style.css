@@ -175,3 +175,36 @@ li {
   margin-bottom: 15px;
   line-height: 1.6;
 }
+
+.sobre-logo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 10%;
+}
+
+.logo-imagem img {
+  width: 560px;
+  height: auto;
+  max-width: none;
+}
+
+.logo-texto h2 {
+  font-size: 32px;
+  color: #2f2f6f;
+  margin-bottom: 20px;
+}
+
+.logo-texto p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.artigo-evento {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
