@@ -2,37 +2,63 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Ciências Exatas</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Desenvolvimento de Sistemas – Artigos Científicos</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
+
 <main>
   <div class="conteudo-central">
-<h1>Desenvolvimento de Sistemas</h1>
+    <h1>Desenvolvimento de Sistemas</h1>
 
-<p>
-Nesta seção estão listados os artigos científicos da área de Desenvolvimento de Sistemas.
-</p>
+    <input
+      type="text"
+      id="searchAdmin"
+      placeholder="Buscar artigo por título ou autor..."
+      onkeyup="filtrarAdmin()"
+    >
 
-<ul>
-  <li>
-    <strong>TÍTULO DO ARTIGO</strong><br>
-    Autor(es): NOME(S)<br>
-    Curso: CURSO<br>
-    Ano: ANO<br>
-    <a href="#">Acessar PDF</a>
-  </li>
-</ul>
+    <div class="lista-artigos">
+      <div class="card-artigo artigo-admin">
+        <h3>A REFORMA DO NOVO ENSINO MÉDIO E SUA QUALIDADE NA  EDUCAÇÃO</h3>
+        <p><strong>Autor(es):</strong> Carlos Eduardo Silva da Rocha, Jamilly Victoria Nascimento de Araújo, João Emanuel da Silva, João Fernando Silva Monteiro Serpa, Maria Paula Farias Alves, Salomé Luanny Pereira Barbosa</p>
+        <p><strong>Ano:</strong> 2024</p>
+        <a href="https://archive.org/details/a-reforma-do-ensino-medio"
+           class="botao" target="_blank">
+           Acessar PDF
+        </a>
+      </div>
 
-<p>
-<a href="artigos.html">Voltar para Artigos Científicos</a>
-</p>
+      <div class="card-artigo artigo-admin">
+        <h3>VOCÊ PENSA OU APENAS REPETE O QUE VÊ? COMO O ALGORITMO DO  INSTAGRAM AFETA A FORMAÇÃO DE OPINIÃO DOS ADOLESCENTES</h3>
+        <p><strong>Autor(es):</strong>  João Emanuel da Silva; Maria Paula Farias Alves; Mayra Adrielle Andrade Silva; Moniky Vitória Lima Santos; Salomé Luanny Pereira Barbosa</p>
+        <p><strong>Ano:</strong> 2025</p>
+        <a href="https://archive.org/details/voce-pensa-ou-apenas-repete-o-que-ve-como-o-algoritmo-do-instagram-afeta-a-for"
+           class="botao" target="_blank">
+           Acessar PDF
+        </a>
+      </div>
+    </div>
 
+    <p>
+      <a href="artigos.html" class="botao">Voltar para Artigos Científicos</a>
+    </p>
   </div>
 </main>
+
+<script>
+function filtrarAdmin() {
+  let input = document.getElementById("searchAdmin");
+  let filtro = input.value.toLowerCase();
+  let artigos = document.getElementsByClassName("artigo-admin");
+
+  for (let i = 0; i < artigos.length; i++) {
+    let texto = artigos[i].innerText.toLowerCase();
+    artigos[i].style.display = texto.includes(filtro) ? "" : "none";
+  }
+}
+</script>
 
 <footer>
   <p>
